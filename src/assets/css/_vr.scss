@@ -1,0 +1,241 @@
+span {
+  display: inherit;
+}
+.article {
+  p {
+    line-height: (24/14);
+  }
+  img {
+    max-width: 100%;
+  }
+
+}
+
+
+.pop-ups {
+  display: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  &.show {
+    display: block;
+  }
+  .pop-ups__trigger {
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: 8px;
+    &:hover {
+      opacity: .7;
+    }
+  }
+  .pop-ups__hd {
+    padding: 0 35px;
+  }
+}
+.vr-introduction {
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  width: 92%;
+  max-width: 870px;
+  height: 80%;
+  padding-top: 48px;
+  transform: translateX(-50%);
+  border: 1px solid rgba(#8b8b8b,.5);
+  border-radius: 50px;
+}
+.vr-introduction__hd {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 48px;
+  text-align: center;
+  line-height: 48px;
+  background: #ececec;
+  color: #333;
+  .pop-ups__trigger {
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+}
+.vr-introduction__bd {
+  position: relative;
+  background: #fff;
+  height: 100%;
+  overflow-y: auto;
+  padding: 20px 40px;
+}
+
+.vr-works {
+  width: 100%;
+  height: 100%;
+  background: rgba(#000,.8);
+  color: #fff;
+  .pop-ups__trigger {
+    right: 25px;
+    top: 25px;
+  }
+}
+.vr-works__inner {
+  position: absolute;
+  top: 12.5%;
+  width: 100%;
+  height: 75%;
+  padding-left: 375px;
+}
+.vr-works__text {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 275px;
+  height: 100%;
+  padding-bottom: 40px;
+  border-right: 1px solid #4c4943;
+  >.inner {
+    height: 100%;
+    padding: 0 20px 0px 25px;
+    overflow: auto;
+  }
+  .article {
+    font-size: 12px;
+    line-height: (20/12);
+    margin-bottom: 50px;
+  }
+  .title {
+    margin-bottom: 5px;
+    font-size: 20px;
+    line-height: 1.4;
+  }
+  .other {
+    margin-bottom: 10px;
+    line-height: (18/12);
+  }
+
+}
+
+.vr-comment {
+  font-size: 12px;
+  .count {
+    font-size: 14px;
+    margin-bottom: 10px;
+  }
+  .chat-bar {
+    position: relative;
+    font-size: 12px;
+    padding-right: 35px;
+    margin-bottom: 15px;
+  }
+  .chat-controller {
+    display: block;
+    width: 100%;
+    line-height: 28px;
+    background: rgba(#ffffff,.5);
+    color: #fff;
+    padding: 0 8px;
+    border: 1px solid rgba(#e8e8e8,.6);
+    border-radius: 3px;
+    &::-webkit-input-placeholder {
+      color: #fff;
+    }
+    &:-moz-placeholder {
+      color:#fff;
+    }
+    &::-moz-placeholder {
+      color:#fff;
+    }
+    &:-ms-input-placeholder {
+      color:#fff;
+    }
+  }
+  .chat-controller__btn {
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: inline-block;
+    line-height: 30px;
+    width: 35px;
+    text-align: right;
+  }
+}
+.vr-comment__list {
+  li {
+    position: relative;
+    min-height: 35px;
+    padding-left: 40px;
+    margin-bottom: 15px;
+  }
+  .avatar {
+    position: absolute;
+    left: 0;
+    display: inline-block;
+    width: 35px;
+    background: no-repeat center;
+    background-size: cover;
+    &:before {
+      content: '';
+      display: block;
+      padding-top: 100%;
+    }
+  }
+  .author {
+    position: relative;
+    margin-bottom: 5px;
+    padding-right: 100px;
+  }
+  .time {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .msg {
+    line-height: 1.5;
+  }
+
+}
+.vr-operating {
+  position: absolute;
+  right: 25px;
+  bottom: 5px;
+  a {
+    position: relative;
+    display: inline-block;
+    padding: 0 5px;
+  }
+  .iconfont {
+    font-size: 20px;
+  }
+  .count-praise {
+    position: absolute;
+    top: -7px;
+    left: 22px;
+    display: block;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 11px;
+    line-height: 13px;
+    background: #00a0e8;
+    //border: 1px solid rgba(#000,.5);
+    padding: 0 4px;
+    border-radius: 6px;
+  }
+  .collection {
+    .icon-star__full {
+      display: none;
+    }
+    &.on {
+      .icon-star {
+        display: none;
+      }
+      .icon-star__full {
+        display: block;
+      }
+    }
+  }
+}
+.wr-works__album {
+
+}

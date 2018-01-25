@@ -1,0 +1,120 @@
+//按钮样式
+.btn-more {
+  position: relative;
+  display: inline-block;
+  width: 176px;
+  height: 55px;
+  text-align: center;
+  color: #7a7a7a;
+  line-height: 53px;
+  border: 1px solid #bfbfbf;
+  border-radius: 5px;
+  overflow: hidden;
+  /*span {
+    display: block;
+    position: absolute;
+    top: -50%;
+    width: 100%;
+    height: 100%;
+    transform:  translateY(50%);
+    transition: all .2s linear;
+    &:nth-child(1) {
+      transform:  rotateX(0deg) translateY(50%);
+    }
+    &:nth-child(2){
+      top: auto;
+      bottom: -50%;
+      transform:  rotateX(90deg) translateY(-50%);
+      background: $blue;
+      color: #fff;
+    }
+
+  }
+  &:hover {
+    span {
+      &:nth-child(1) {
+        transform:  rotateX(90deg) translateY(50%);
+      }
+      &:nth-child(2){
+        transform:  rotateX(0deg) translateY(-50%);
+      }
+    }
+  }*/
+}
+.btn-f39800 {
+  float: right;
+  padding: 8px 22px;
+  color: #fff;
+  background: #f39800;
+  border-radius: 5px;
+  line-height: 1;
+  &:hover {
+    color: #fff;
+  }
+}
+.btns {
+  padding: 8px 22px;
+  border-radius: 2px;
+  line-height: 1;
+}
+.btn-bebebe {
+  color: #fff;
+  background: #bebebe;
+
+}
+.btn-eeeeee {
+  background: #eee;
+  color: #9b9b9b;
+  line-height: 1;
+  border-radius: 3px;
+}
+.btn-00a0e8 {
+  color: #fff;
+  background: #00a0e8;
+  text-align: center;
+  &:hover {
+    color: #fff;
+  }
+}
+
+.btn1,.btn-send {
+  padding: 13px 0;
+  line-height: 1;
+  font-size: 12px;
+  text-align: center;
+  background: #fff;
+  color: #747474;
+  border: 1px solid #8c8c8c;
+  border-radius: 4px;
+  cursor: pointer;
+  overflow: hidden;
+  &.btn-sended {
+    color: #a5a5a5;
+    background: #eeeeee;
+    cursor: no-drop;
+  }
+}
+
+.btn-line {
+  display: inline-block;
+  width: 60px;
+  padding: 4px 0;
+  border: 1px solid #848484;
+  color: #848484;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 12px;
+  line-height: 1;
+  background: #fff;
+  &.ed {
+    color: #00a0e8;
+    border: 1px solid #00a0e8;
+  }
+}
+
+.btnAte {
+  padding: 5px 10px;
+  line-height: 1;
+  //color: #fff;
+  border-radius: 3px;
+}

@@ -1,0 +1,56 @@
+#listSchool {
+  padding-top: 10px;
+
+  //padding-bottom: 15px;
+  .school-list-wrap {
+    background: #fff;
+    padding: 8px 2px;
+    //min-height: 600px;
+  }
+  .school-item-wrap {
+    //width: ;
+    padding: 0 7.5px;
+  }
+  .filter-wrap1 {
+    padding-right: 150px;
+  }
+  .rotate-360 {
+    width: 18px;
+    height: 18px;
+    margin-right: 5px;
+  }
+  .text-end {
+    font-size: 12px;
+    margin-bottom: 30px;
+  }
+
+  @media (max-width: 1200px) {}
+  @media (max-width: 992px) {
+    .filter-wrap1 {
+      padding-right: 0;
+      .filter-item {
+        //width: 50%;
+      }
+      .btn-sc {
+        //display: none;
+      }
+    }
+
+  }
+  @media (max-width: 768px) {}
+  @media (min-width: 768px) {
+    min-height: 720px;
+  }
+}
+.rotate-360 {
+  animation: rotate-360 1s linear infinite;
+}
+@keyframes rotate-360 {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+
+}

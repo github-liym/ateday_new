@@ -1,0 +1,16 @@
+@function size($px) {
+  @return $px / $desize * 1rem;
+}
+@function size2($px,$px2) {
+  @return $px / $desize * 1rem $px2 / $desize * 1rem;
+}
+@function size3($px,$px2,$px3) {
+  @return $px / $desize * 1rem $px2 / $desize * 1rem $px3 / $desize * 1rem;
+}
+@function size4($px,$px2,$px3,$px4) {
+  @return $px / $desize * 1rem $px2 / $desize * 1rem $px3 / $desize * 1rem $px4 / $desize * 1rem;
+}
+
+@function pxTorem($px){
+  @return $px / $remSize * 1rem;
+}

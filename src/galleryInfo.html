@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>画廊详情</title>
+	@@include('components/linkCss.html')
+</head>
+<body>
+@@include('components/header.html')
+<div class="gallery-info__wrap">
+	<div class="gallery-info__banner" >
+		<div class="bg" style="background-image: url(assets/images/temporary/2.jpg)"></div>
+		<div class="content wrap1200">
+			<div class="name">Athena Architecture Gallery</div>
+			<div class="text">雅典娜建筑画廊</div>
+		</div>
+	</div>
+	<div class="gallery-info__body">
+		<div class="wrap1200">
+			<div class="intro">
+				<p>
+					雅典建筑画廊为希腊的基克拉迪艺术博物馆设计了咖啡厅和商店。建筑师的灵感受到传统基克拉迪艺术形式的启发，他们将其提升简化并与建筑艺术相结合，让游客在博物馆的中庭中感受到博物馆的精神与基克拉迪艺术风格，还有不拘一格的古代集市般的自由布局。
+				</p>
+				<p>
+					画廊空间由两个高低不一的矩形空间组成，外侧空间呈开放状态迎接来往游客，内侧空间则呈内向性状态向游客展示更多的艺术品，两个空间依靠一段楼梯联系。外侧空间的货架位于中心和四周的靠墙矮搁架上，墙面地面还有天花采用了木材装饰。内侧空间的货架形势却是通墙高的白色货架，顶部暴露的粗燥楼板与精致木地板形成鲜明对比。
+				</p>
+				<p><img src="assets/images/icon/triangle.png" /> 画廊环境：</p>
+				<p><img src="assets/images/temporary/2.jpg"/></p>
+				<p><img src="assets/images/temporary/3.jpg"/></p>
+				<p>雅典建筑画廊为希腊的基克拉迪艺术博物馆设计了咖啡厅和商店。建筑师的灵感受到传统基克拉迪艺术形式的启发，他们将其提升简化并与建筑艺术相结合，让游客在博物馆的中庭中感受到博物馆的精神与基克拉迪艺术风格，还有不拘一格的古代集市般的自由布局。</p>
+				<p>画廊空间由两个高低不一的矩形空间组成，外侧空间呈开放状态迎接来往游客，内侧空间则呈内向性状态向游客展示更多的艺术品，两个空间依靠一段楼梯联系。外侧空间的货架位于中心和四周的靠墙矮搁架上，墙面地面还有天花采用了木材装饰。内侧空间的货架形势却是通墙高的白色货架，顶部暴露的粗燥楼板与精致木地板形成鲜明对比。
+				</p>
+				<p><img src="assets/images/icon/triangle.png" /> 设计风格：</p>
+				<p><img src="assets/images/temporary/1.jpg"/></p>
+			</div>
+			<div class="zan zan-radius" title="点赞" onclick="like(this)">
+				<i class="iconfont icon-zan1"></i>
+				<span class="zan-count">
+                <span class="num">12</span>
+                <span class="addSuccess">+1</span>
+            </span>
+			</div>
+			<div class="text-535353 text-center">为TA点赞</div>
+			<div class="share-gray">
+				分享：
+				@@include('components/share.html')
+			</div>
+			<div class="gallery-info__fair overflow-hidden">
+				<div class="title-wrap">
+					<h3>画展</h3>
+				</div>
+				<div class="list-wrap">
+					<div class="item-wrap">
+						@@include('components/item/item-style__1.html')
+					</div>
+					<div class="item-wrap">
+						@@include('components/item/item-style__1.html')
+					</div>
+					<div class="item-wrap">
+						@@include('components/item/item-style__1.html')
+					</div>
+					<div class="item-wrap">
+						@@include('components/item/item-style__1.html')
+					</div>
+					<div class="item-wrap">
+						@@include('components/item/item-style__1.html')
+					</div>
+					<div class="item-wrap">
+						@@include('components/item/item-style__1.html')
+					</div>
+				</div>
+				<ul class="pagination-line tabs">
+					<li class="active">
+						<a href="javascript:"></a>
+					</li>
+					<li>
+						<a href="javascript:"></a>
+					</li>
+					<li>
+						<a href="javascript:"></a>
+					</li>
+				</ul>
+			</div>
+			<div class="comment-panel__wrap">
+				<div class="count">352 评论：</div>
+
+				<!--未登录状态-->
+				<!--
+				<div class="comment-controller comment-controller__signout">
+					<div class="tip">大牛，别默默的看了，快登录帮我点评一下吧！:)</div>
+					<button class="btn-comment">登录</button>
+				</div>
+				-->
+				<!--已登录状态-->
+				<div class="comment-controller">
+					<div class="comment-controller__author">
+						<div class="avatar" style="background-image: url(assets/images/temporary/5.png)"></div>
+						<span class="name omit">李潇潇</span>
+					</div>
+					<div class="comment-controller__main">
+						<textarea placeholder="已有352人留言，你不来说两句？"></textarea>
+					</div>
+					<button class="btn-comment btn-blue">评论</button>
+				</div>
+
+				<div class="comment-list">
+					<div class="item">
+						<a href="javascript:" class="avatar"  style="background-image: url(assets/images/temporary/5.png)"></a>
+						<div class="name">李潇潇 <span class="time">2017-1-12 15:20</span></div>
+						<div class="desc">
+							这个展览我有去现场，超多人的，vr场馆很不错，可以仔细地看。已经分享给好友了。超多人的，vr场馆很不错，可以仔细地看。已经分享给好友了。超多人的，vr场馆很不错，可以仔细地看。已经分享给好友了。
+						</div>
+						<div class="reply-controller">
+							<div class="reply-controller__icon">
+								<i class="iconfont icon-huifu"></i>回复
+							</div>
+							<!--
+							<div class="reply-controller__main">
+								<div class="reply-controller__container">
+									<textarea id="replyController" class="word-count" maxlength="200" data-count="200"></textarea>
+									<div class="text-count">还可以输入<span class="num">200</span>个字符</div>
+								</div>
+								<div class="reply-controller__btn">
+									<span class="text-8b8b8b reply-controller__close" >取消</span>
+									<a class="btns btn-bebebe" href="">回复</a>
+								</div>
+							</div>
+							-->
+						</div>
+					</div>
+					<div class="item">
+						<a href="javascript:" class="avatar"  style="background-image: url(assets/images/temporary/6.png)"></a>
+						<div class="name">李潇潇 <span class="time">2017-1-12 15:20</span></div>
+						<div class="desc">
+							给各位小白推荐一个学习UI设计和平面设计的微信公众号，各种软件任你下载，大咖教程，实战案例，仅此一家，错过这个公众号，你将在设计师的路上多奋斗10年
+						</div>
+						<div class="reply-controller">
+							<div class="reply-controller__icon">
+								<i class="iconfont icon-huifu"></i>回复
+							</div>
+						</div>
+					</div>
+					<div class="item">
+						<a href="javascript:" class="avatar"  style="background-image: url(assets/images/temporary/7.png)"></a>
+						<div class="name">李潇潇 <span class="time">2017-1-12 15:20</span></div>
+						<div class="desc">
+							我很好奇怎么切图
+						</div>
+						<div class="reply-controller">
+							<div class="reply-controller__icon">
+								<i class="iconfont icon-huifu"></i>回复
+							</div>
+						</div>
+					</div>
+					<div class="item">
+						<a href="javascript:" class="avatar"  style="background-image: url(assets/images/temporary/8.png)"></a>
+						<div class="name">李潇潇 <span class="time">2017-1-12 15:20</span></div>
+						<div class="desc">
+							这个展览我有去现场，超多人的，vr场馆很不错，可以仔细地看。已经分享给好友了。超多人的，vr场馆很不错，可以仔细地看。已经分享给好友了。超多人的，vr场馆很不错，可以仔细地看。已经分享给好友了。
+						</div>
+						<div class="reply-controller">
+							<div class="reply-controller__icon">
+								<i class="iconfont icon-huifu"></i>回复
+							</div>
+						</div>
+					</div>
+					<div class="item">
+						<a href="javascript:" class="avatar"  style="background-image: url(assets/images/temporary/9.png)"></a>
+						<div class="name">李潇潇 <span class="time">2017-1-12 15:20</span></div>
+						<div class="desc">
+							给各位小白推荐一个学习UI设计和平面设计的微任你下载，大咖教程，实战案例，仅此一家，错过这个公众号，你将在设计师的路上多奋斗10年不可能错过这个公众号，你将在设计师的路上多奋斗10年不可能
+						</div>
+						<div class="reply-controller">
+							<div class="reply-controller__icon">
+								<i class="iconfont icon-huifu"></i>回复
+							</div>
+						</div>
+					</div>
+					<div class="item">
+						<a href="javascript:" class="avatar"  style="background-image: url(assets/images/temporary/8.png)"></a>
+						<div class="name">李潇潇 <span class="time">2017-1-12 15:20</span></div>
+						<div class="desc">
+							这个展览我有去现场，超多人的，vr场馆很不错，可以仔细地看。已经分享给好友了。超多人的，vr场馆很不错，可以仔细地看。已经分享给好友了。超多人的，vr场馆很不错，可以仔细地看。已经分享给好友了。
+						</div>
+						<div class="reply-controller">
+							<div class="reply-controller__icon">
+								<i class="iconfont icon-huifu"></i>回复
+							</div>
+						</div>
+					</div>
+				</div>
+				@@include('components/pagination.html')
+			</div>
+			<div class="fr">
+				<div class="gallery-info__right">
+					<a class="banner-top" href="/">
+						<img src="assets/images/gallery-info__right.jpg" />
+					</a>
+					<div class="visitor-list__wrap gallery-info__visitor">
+						<div class="title">最近来访：</div>
+						<div class="list-wrap visitor-list">
+							<div class="item-wrap">
+								<a href="" class="avatar"  style="background-image: url(assets/images/temporary/5.png)" ></a>
+								<span class="name omit">雷神</span>
+							</div>
+							<div class="item-wrap">
+								<a href="" class="avatar"  style="background-image: url(assets/images/temporary/5.png)" ></a>
+								<span class="name omit">雷神</span>
+							</div>
+							<div class="item-wrap">
+								<a href="" class="avatar"  style="background-image: url(assets/images/temporary/5.png)" ></a>
+								<span class="name omit">雷神</span>
+							</div>
+							<div class="item-wrap">
+								<a href="" class="avatar"  style="background-image: url(assets/images/temporary/5.png)" ></a>
+								<span class="name omit">雷神</span>
+							</div>
+							<div class="item-wrap">
+								<a href="" class="avatar"  style="background-image: url(assets/images/temporary/5.png)" ></a>
+								<span class="name omit">雷神</span>
+							</div>
+							<div class="item-wrap">
+								<a href="" class="avatar"  style="background-image: url(assets/images/temporary/5.png)" ></a>
+								<span class="name omit">雷神</span>
+							</div>
+							<div class="item-wrap">
+								<a href="" class="avatar"  style="background-image: url(assets/images/temporary/5.png)" ></a>
+								<span class="name omit">雷神</span>
+							</div>
+							<div class="item-wrap">
+								<a href="" class="avatar"  style="background-image: url(assets/images/temporary/5.png)" ></a>
+								<span class="name omit">雷神</span>
+							</div>
+							<div class="item-wrap">
+								<a href="" class="avatar"  style="background-image: url(assets/images/temporary/5.png)" ></a>
+								<span class="name omit">雷神</span>
+							</div>
+							<div class="item-wrap">
+								<a href="" class="avatar"  style="background-image: url(assets/images/temporary/5.png)" ></a>
+								<span class="name omit">雷神</span>
+							</div>
+							<div class="item-wrap">
+								<a href="" class="avatar"  style="background-image: url(assets/images/temporary/5.png)" ></a>
+								<span class="name omit">雷神</span>
+							</div>
+							<div class="item-wrap">
+								<a href="" class="avatar"  style="background-image: url(assets/images/temporary/5.png)" ></a>
+								<span class="name omit">雷神</span>
+							</div>
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+@@include('components/footer.html')
+@@include('components/linkJs.html')
+</body>
+</html>

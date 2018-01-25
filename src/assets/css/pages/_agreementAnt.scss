@@ -1,0 +1,37 @@
+.agreementAnt {
+  font-size: 14px;
+  border-radius: 5px;
+  background: #fff;
+  width: 1200px;
+  max-width: 98%;
+  margin: 20px auto 0;
+  .main {
+	padding: 0 60px 30px;
+	line-height: 1.5;
+  }
+  .prologue {
+	padding: 20px 0 15px;
+  }
+  .paragraph {
+	margin-bottom: 12px;
+	padding-bottom: 15px;
+	border-bottom: 1px solid #ededed;
+	&:last-child {
+	  border-bottom: 0px;
+	}
+  }
+  h3 {
+	font-size: 20px;
+	font-weight: bold;
+	padding: 20px 60px;
+	margin: 0 auto;
+	border-bottom: 1px solid #ededed;
+  }
+  h6 {
+	margin: 0 auto;
+	font-size: 14px;
+	font-weight: bold;
+	line-height: (44/14);
+  }
+
+}

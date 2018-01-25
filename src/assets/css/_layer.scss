@@ -1,0 +1,792 @@
+//弹窗
+.layerbg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 999;
+  width: 100%;
+  height: 100%;
+  background: rgba(#000,.4);
+  animation: layerbg .4s;
+}
+#opusPop {
+  z-index: 999999;
+}
+.layerbox,.fancybox {
+  transform: translate(-50%,-50%);
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  z-index: 900;
+  width: 560px;
+  height: 250px;
+  max-width: 98%;
+  max-height: 98%;
+  padding-top: 65px;
+
+  border-radius: 5px;
+  overflow: hidden;
+  &.current {
+    z-index: 1000;
+  }
+  .layer-header {
+    position: absolute;
+    top: 0;
+    z-index: 2;
+    width: 100%;
+    background: #fff;
+
+    .layer-close {
+      position: absolute;
+      top: 50%;
+      right: 10px;
+      width: 40px;
+      height: 40px;
+      margin-top: -20px;
+      padding: 12px;
+      cursor: pointer;
+    }
+  }
+  .layer-body {
+    overflow: auto;
+    height: 100%;
+    //margin: 30px 0;
+
+    padding: 10px 40px 0;
+    background: #fff;
+  }
+  .layer-bottom {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    //background: #f8f8f8;
+  }
+  &.rotateY-360 {
+    .layerbox {
+      transform: rotateY(0deg);
+      animation: layerbox 1.5s;
+    }
+    .fancyboxbg {
+      backface-visibility: hidden;
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      background: #fff url("../images/common/logo.jpg") no-repeat center;
+      transform: rotateY(-180deg);
+      animation: layerboxbg 1.5s;
+    }
+  }
+  .form-control {
+    height: 40px;
+  }
+  .code-input {
+    float: left;
+    width: 66%;
+  }
+  .icon-validate {
+    position: absolute;
+    right: 15px;
+    top: 10px;
+    width: 17px;
+    height: 17px;
+    padding: 2px;
+    border-radius: 50%;
+    background: #cd3e3e;
+    color: #fff;
+  }
+  .validate-tip {
+    position: absolute;
+    left: 10px;
+    top: 100%;
+    line-height: 1.6;
+    color: #cd3e3e;
+  }
+  .btn-00a0e8 {
+    text-align: center;
+  }
+  .layer-close,.icon-close {
+    &:hover {
+      color: #90aab6;
+    }
+  }
+}
+.fancybox {
+  display: none;
+  &.sm {
+    width: 300px;
+    height: 150px;
+    padding: 41px 0 40px;
+    background: #fff;
+    .layer-body {
+      padding: 0px;
+    }
+    .layer-bottom {
+      border-top: 1px solid #eeeeee;
+      text-align: center;
+    }
+  }
+}
+//登录、注册。找回密码等弹窗
+.layer-header-1 {
+  padding: 12.5px 10px;
+  //height: 67px;
+  color: #acc6d2;
+  background: #effaff !important;
+  img {
+    height: 40px;
+    margin-right: 11px;
+  }
+  .layer-close {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    width: 40px;
+    height: 40px;
+    margin-top: -20px;
+    padding: 12px;
+    cursor: pointer;
+  }
+}
+.layer-header-2 {
+  text-align: center;
+  background: #fff !important;
+  font-size: 14px;
+  padding: 0 !important;
+  line-height: 40px;
+  color: #333333  !important;
+  border-bottom: 1px solid #eeeeee;
+  .layer-close {
+    color: #bbbbbb ;
+    &:hover {
+      color: #939393;
+    }
+  }
+}
+.layer-btn-ok {
+  width: 100%;
+  font-size: 16px;
+  line-height: 40px;
+  padding: 0;
+  &:hover {
+    color: #fff;
+  }
+}
+.layer-body-1 {
+  .form-group {
+    position: relative;
+    .icon-label {
+      position: absolute;
+      top: 20px;
+      left: 8px;
+      width: 18px;
+      height: 18px;
+      transform: translateY(-50%);
+      color: #d2d2d2;
+      &.sm {
+        padding: 2px;
+      }
+    }
+  }
+  .form-control {
+    padding-left: 30px;
+    padding-right: 30px;
+    //margin-bottom: 15px;
+  }
+  .btn-send {
+    float: right;
+    width: 30%;
+    &.btn-sended {
+      color: #a5a5a5;
+      background: #eeeeee;
+      cursor: no-drop;
+    }
+  }
+}
+#login,#register,#revisePwd,#findPwd,#loginSuccess,#loginSuccess1,#registerSuccess,#revisePwdSuccess,#collectionSuccess,#tagEdit,#activateAccount {
+  width: 450px;
+  border-radius: 5px;
+  font-size: 12px;
+  overflow: hidden;
+  .layer-header {
+    padding: 12.5px 10px;
+    //height: 67px;
+    color: #acc6d2;
+    background: #effaff;
+    img {
+      height: 40px;
+      margin-right: 11px;
+    }
+    .layer-close {
+      position: absolute;
+      top: 50%;
+      right: 10px;
+      width: 40px;
+      height: 40px;
+      margin-top: -20px;
+      padding: 12px;
+      cursor: pointer;
+    }
+  }
+  .layer-body {
+    padding: 0px 40px 0;
+    background: #fff;
+  }
+  .form-group {
+    position: relative;
+    .icon-label {
+      position: absolute;
+      top: 20px;
+      left: 8px;
+      width: 18px;
+      height: 18px;
+      transform: translateY(-50%);
+      color: #d2d2d2;
+      &.sm {
+        padding: 2px;
+      }
+    }
+  }
+  .form-control {
+    padding-left: 30px;
+    padding-right: 30px;
+    //margin-bottom: 15px;
+  }
+  .btn-send {
+    float: right;
+    width: 30%;
+    &.btn-sended {
+      color: #a5a5a5;
+      background: #eeeeee;
+      cursor: no-drop;
+    }
+  }
+  .btn-00a0e8 {
+    display: block;
+    width: 100%;
+    color: #fff;
+    padding: 0;
+    line-height: 43px;
+    font-size: 16px;
+  }
+  .other {
+    margin-bottom: 30px;
+    a {
+      color: #0e6add;
+    }
+  }
+
+  .checkbox-item {
+    .icon {
+      left: 0;
+      top: 0%;
+      padding: 3px;
+      width: 100%;
+      height: 100%;
+      color: #747474;
+      transform: rotate(10deg);
+    }
+  }
+}
+#login {
+  height: 450px;
+  .tab-wrap {
+    height: 250px;
+    margin-bottom: 10px;
+    //overflow: hidden;
+    .form-top {
+      height: 205px;
+      padding-top: 54px;
+    }
+    form {
+      display: none;
+      &.active {
+        display: block;
+      }
+    }
+  }
+  .other3 {
+    >.title {
+      margin-bottom: 10px;
+      text-align: center;
+      color: #7c7c7c;
+    }
+    .icon {
+      width: 30px;
+      height: 30px;
+    }
+  }
+  .tabul {
+    border: none;
+    >a {
+      display: block;
+      cursor: pointer;
+      position: absolute;
+      right: -70px;
+      bottom: -70px;
+      width: 140px;
+      height: 140px;
+      background: #e9e9e9;
+      transform: rotate(45deg);
+      &.active {
+        display: none;
+      }
+    }
+
+    i {
+      position: absolute;
+      left: 25%;
+      top: 50%;
+      width: 30px;
+      height: 30px;
+      transform: translate(-70%,-50%) rotate(-45deg);
+      background: no-repeat center;
+      &.pc {
+        background-image: url(../images/tag/pc.png);
+      }
+      &.phone {
+        background-image: url(../images/tag/phone.png);
+      }
+    }
+
+  }
+}
+#register {
+  height: 560px;
+  .layer-body {
+    padding: 40px 40px 0;
+  }
+  .form-top {
+    height: 375px;
+  }
+  .form-group {
+    margin-bottom: 25px;
+  }
+  .checkbox-label {
+    color: #939292;
+    a {
+      color: #3e3e3e;
+    }
+  }
+  .code-group {
+    margin-bottom: 20px;
+    .icon-validate {
+      left: 58.5%;
+      right: auto;
+    }
+  }
+  .btn-register {
+    margin-bottom: 10px;
+  }
+  .other {
+    margin-bottom: 5px;
+  }
+}
+#revisePwd,#findPwd {
+  height: 350px;
+  .form-top {
+    height: 200px;
+    padding-top: 40px;
+  }
+  .form-group {
+    margin-bottom: 20px;
+  }
+  .btn-00a0e8 {
+    margin-bottom: 10px;
+  }
+  .other {
+    margin: 0 ;
+    margin-right: 0;
+  }
+}
+#loginSuccess,#loginSuccess1,#registerSuccess,#revisePwdSuccess {
+  height: 370px;
+  line-height: 1;
+  font-size: 14px;
+  .avatar {
+    display: block;
+    width: 125px;
+    height: 125px;
+    margin: 15px auto;
+    border-radius: 50%;
+  }
+  .text-5c5c5c {
+    margin-bottom: 35px;
+    color: #5c5c5c;
+  }
+  .text-ff0000 {
+    margin-bottom: 25px;
+    color: #ff0000;
+  }
+  .gotouser {
+    display: inline-block;
+    line-height: 40px;
+    padding: 0 25px;
+    margin-bottom: 5px;
+    border: 1px solid #c9c9c9;
+    border-radius: 4px;
+  }
+}
+
+#tagEdit.tag-edit,#collectionSuccess.tag-edit {
+  width: 350px;
+  padding-top: 40px;
+  border: 1px solid #eee;
+  .layer-header {
+    text-align: center;
+    background: #fff;
+    font-size: 14px;
+    padding: 0;
+    line-height: 40px;
+    color: #333333;
+    border-bottom: 1px solid #eeeeee;
+    .layer-close {
+      color: #bbb;
+      &:hover {
+        color: #939393;
+      }
+    }
+  }
+  .layer-body {
+    padding: 10px 25px 10px;
+  }
+  .layer-bottom {
+    height: 40px;
+    padding: 10px 20px 0 35px;
+  }
+  .search-controller {
+    width: 100%;
+    padding: 0 10px;
+    margin-bottom: 10px;
+    line-height: 33px;
+    background: #f8f8f8;
+    border: 1px solid #eee;
+  }
+  .search-result {
+    height: 240px;
+    overflow-y: auto;
+    li {
+      float: none;
+      padding: 0 10px;
+      color: #333;
+      line-height: 30px;
+      &.active {
+        padding-right: 33px;
+        background: #f8f8f8 url("../images/tag/success.png") no-repeat center right;
+        background-position: right 7px center;
+      }
+      a {
+        display: block;
+        @extend .omit;
+      }
+    }
+  }
+  .tag-add {
+    color: #333333;
+    .icon {
+      color: #c9c9c9;
+      vertical-align: -.1em;
+    }
+  }
+  .share {
+    float: left;
+    color: #8d8d8d;
+    a {
+    }
+    .icon {
+      width: (22/12)+em;
+      height: (22/12)+em;
+      border: 1px solid #d2d2d2;
+      border-radius: 1px;
+    }
+    .weibo {
+      padding: 2px;
+    }
+    .weixin {
+      padding: 2px;
+    }
+    .douban {
+      padding: 4px;
+      color: #278d36;
+    }
+  }
+  .btns {
+    float: right;
+    padding: 5px 10px;
+    background: #00a0e8;
+    color: #fff;
+    border-radius: 5px;
+  }
+}
+#tagEdit {
+  height: 400px;
+  padding-bottom: 40px;
+
+  .layer-bottom {
+    background: #f8f8f8;
+  }
+}
+#collectionSuccess {
+  display: table;
+  height: 140px;
+  font-size: 14px;
+  .layer-body {
+    display: table-cell;
+    vertical-align: middle;
+    padding-bottom: 20px;
+    text-align: center;
+    color: #929292;
+    .icon {
+      width: 2em;
+      height: 2em;
+      vertical-align: -.6em;
+      margin-right: 5px;
+    }
+    a {
+      color: #00a0e8;
+      margin: 0 3px;
+    }
+  }
+}
+
+#moodEdit {
+  display: none;
+  width: 300px;
+  height: 180px;
+  padding-top: 40px;
+  padding-bottom: 30px;
+  border: 1px solid #eee;
+  .layer-header {
+    padding: 12.5px 0;
+    border-bottom: 1px solid #eee;
+    .icon-close {
+      position: absolute;
+      top: 50%;
+      right: 10px;
+      width: 40px;
+      height: 40px;
+      margin-top: -20px;
+      padding: 12px;
+      cursor: pointer;
+    }
+  }
+  .layer-body {
+    position: relative;
+    padding: 10px 20px 10px;
+  }
+  .mood-controller {
+    width: 100%;
+    border: 1px solid #eee;
+    height: 40px;
+    border-radius: 3px;
+    padding: 5px;
+  }
+  .text-count {
+    position: absolute;
+    right: 20px;
+    bottom: 15px;
+  }
+  .layer-bottom {
+    //padding: 5px 0px;
+    background: #f8f8f8;
+  }
+  .btns {
+    display: block;
+
+  }
+}
+
+#activateAccount {
+  width: 450px;
+  height: 350px;
+  .layer-body {
+    padding: 20px 40px;
+  }
+  .form-top {
+    height: 200px;
+  }
+}
+
+.thumbnail-cut {
+  display: none;
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  height: 376px;
+  /* width: 500px;
+   height: 300px;
+   max-width: 80%;
+   max-height: 80%;*/
+  padding: 40px 0px 56px;
+  z-index: 99999 !important;
+  background: gold;
+  border: 1px solid #eee;
+  border-radius: 5px;
+  overflow: hidden;
+  form {
+    height: 100%;
+
+  }
+  h3 {
+    margin: 0;
+  }
+  .layer-header {
+    padding: 12px 10px;
+    text-align: left;
+    font-size: 16px;
+    border-bottom: 1px solid #eee;
+  }
+  .thumbnail-title {
+    margin-bottom: 20px;
+    //margin-top: 15px;
+  }
+  .icon-close {
+    position: absolute;
+    right: 15px;
+  }
+  .layer-body {
+    padding: 30px 40px 30px 300px;
+  }
+  .avatar-wrapper {
+    position: absolute;
+    left: 30px;
+    width: 218px;
+    height: 218px;
+
+  }
+  .preview {
+    position: relative;
+    height: 100%;
+    text-align: left;
+    .btn1 {
+      position: absolute;
+      bottom: 0;
+      margin-bottom: 0;
+    }
+  }
+  .avatar-preview {
+    width: 130px;
+    height: 130px;
+    overflow: hidden;
+  }
+  .layer-bottom {
+    padding: 10px 0;
+    text-align: center;
+    background: #f8f8f8;
+  }
+  .btn1 {
+    padding: 10px 25px !important;
+    margin-left: 0px !important;
+  }
+}
+
+.layer-success {
+  width: 350px;
+  height: auto;
+  padding-top: 40px;
+
+  .layer-body {
+    position: relative;
+    padding: 20px 40px 20px 70px;
+    line-height: 1.4;
+    color: #929292;
+    >.icon-duigou {
+      position: absolute;
+      top: 20px;
+      left: 40px;
+      width: 23px;
+      height: 23px;
+    }
+  }
+}
+//院校申请 我要加入
+#applySchool,#joinExhibit {
+  width: 380px;
+  height: 580px;
+
+  .form-top {
+    height: 440px;
+  }
+  .layer-body {
+    padding: 0px 30px 30px;
+  }
+  .text1 {
+    padding-top: 15px;
+    margin-bottom: 10px;
+    color: #b3b3b3;
+    font-size: 12px;
+  }
+  .phone-group {
+    .form-group {
+      float: left;
+      width: 35%;
+      &:nth-child(2){
+        .form-control {
+          padding-left: 10px;
+        }
+      }
+    }
+    >i {
+      display: inline-block;
+      width: 2%;
+      border-top: 1px solid #b5b5b5;
+      vertical-align: middle;
+      margin-top: 15px;
+      margin-left: 1%;
+      margin-right: 1%;
+    }
+    >.form-control {
+      float: right;
+      width: 61%;
+      padding-left: 10px;
+    }
+  }
+  .code-group {
+    .form-control {
+      float: left;
+      width: 58%;
+    }
+    .btn-send {
+      width: 38%;
+    }
+  }
+}
+#joinExhibit {
+  height: 430px;
+  .form-top {
+    height: 300px;
+  }
+  .layer-body {
+    padding: 0 30px;
+  }
+  .text-tip {
+    padding: 5px 0 0 10px;
+    color: #b6b6b6;
+    font-size: 12px;
+  }
+  .icon-label {
+    color: #9d9d9d;
+  }
+}
+
+//确认删除？
+#layerDel {
+  border: 1px solid #dcdcdc;
+  .layer-body {
+    padding-top: 27px;
+    >.icon {
+      width: 2em;
+      height: 2em;
+      //background: red;
+      //color: #fff;
+    }
+  }
+  .layer-bottom {
+    >a {
+      padding: 8px 0;
+      margin: 0px 35px;
+    }
+  }
+}
+
+

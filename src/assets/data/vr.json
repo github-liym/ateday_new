@@ -1,0 +1,93 @@
+{
+  "vrId":"3",
+  "vr": {
+    "avatar": "images/logo_sc.png",
+    "title": "第二届广美师生主题美术作品联展",
+    "time":"2017.5.15-5.18",
+    "address": "广州美术学院",
+    "typeTag": ["家具","设计","文化"],
+    "playNum": 100,
+    "text": "<p>广州美术学院（The Guangzhou Academy of Fine Arts）位于广东省广州市，是经国家教育部批准成立的中国华南地区唯一一所高等美术学府，拥有硕士学位授予权，同时是国务院公布的首批艺术硕士（MFA）专业学位授予单位。</p><p>广州美术学院的前身是1953年由广东华南文艺学院、湖北中南文艺学院和广西艺术专科学校等三校合并而成立的中南美术专科学校；1958年，学校南迁至广州，更名为广州美术学院并开始招收本科生；1981年，学校获得硕士学位授予权；2004年，学校在广州大学城建成新校区，形成“一校两区”办学格局。</p><p>截至C2015年12月，广州美术学院有昌岗和大学城两个校区，总占地面积564亩，总建筑面积36.25万平方米；有专任教师400余人，其中在职教授有62人，副教授142人；下设8个二级学院和1个思想政治理论课教学部，开办29个普通本科专业，有各类在校生8575人。</p>"
+  },
+  "recommend": [
+    {
+      "opusId":"5",
+      "title": "醒狮文化",
+      "thumbnail":"http://91ant.china-360.cn/Public/common/pavilion/0/0/31/pavilion_cover.png",
+      "tag": {
+        "iscopyright": true,
+        "isoriginal": false
+      }
+    },
+    {
+      "opusId":"5",
+      "title": "惠七彩创意设计",
+      "thumbnail":"http://91ant.china-360.cn/Public/common/pavilion/0/0/31/pavilion_cover.png",
+      "tag": {
+        "iscopyright": true,
+        "isoriginal": false
+      }
+    },
+    {
+      "opusId":"5",
+      "title": "嗨豆包装设计",
+      "thumbnail":"http://91ant.china-360.cn/Public/common/pavilion/0/0/31/pavilion_cover.png",
+      "tag": {
+        "iscopyright": true,
+        "isoriginal": false
+      }
+    },
+    {
+      "opusId":"5",
+      "title": "几何抽象风格神器",
+      "thumbnail":"http://91ant.china-360.cn/Public/common/pavilion/0/0/31/pavilion_cover.png",
+      "tag": {
+        "iscopyright": true,
+        "isoriginal": false
+      }
+    }
+
+  ],
+  "comment": {
+      "sum": 50,
+      "list": [
+        {
+          "name": "李潇潇",
+          "avatar": "https://ss0.bdstatic.com/70cFuHSh_Q1YnxGkpoWK1HF6hhy/it/u=2641106727,69344425&fm=111&gp=0.jpg",
+          "time": "2017-1-12 15:20",
+          "message": "这个展览我有去现场，超多人的，vr场馆很不错，可以仔细地看。已经分享给好友了。超多人的，vr场馆很不错，可以仔细地看。已经分享给好友了。超多人的，vr场馆很不错，可以仔细地看。已经分享给好友了。"
+        },
+        {
+          "name": "李潇潇",
+          "avatar": "https://ss0.bdstatic.com/70cFuHSh_Q1YnxGkpoWK1HF6hhy/it/u=2641106727,69344425&fm=111&gp=0.jpg",
+          "time": "2017-1-12 15:20",
+          "message": "这个展览我有去现场，超多人的，vr场馆很不错，可以仔细地看。已经分享给好友了。超多人的，vr场馆很不错，可以仔细地看。已经分享给好友了。超多人的，vr场馆很不错，可以仔细地看。已经分享给好友了。"
+        },
+        {
+          "name": "李潇潇",
+          "avatar": "https://ss0.bdstatic.com/70cFuHSh_Q1YnxGkpoWK1HF6hhy/it/u=2641106727,69344425&fm=111&gp=0.jpg",
+          "time": "2017-1-12 15:20",
+          "message": "这个展览我有去现场，超多人的，vr场馆很不错，可以仔细地看。已经分享给好友了。超多人的，vr场馆很不错，可以仔细地看。已经分享给好友了。超多人的，vr场馆很不错，可以仔细地看。已经分享给好友了。"
+        },
+        {
+          "name": "李潇潇",
+          "avatar": "https://ss0.bdstatic.com/70cFuHSh_Q1YnxGkpoWK1HF6hhy/it/u=2641106727,69344425&fm=111&gp=0.jpg",
+          "time": "2017-1-12 15:20",
+          "message": "这个展览我有去现场，超多人的，vr场馆很不错，可以仔细地看。已经分享给好友了。超多人的，vr场馆很不错，可以仔细地看。已经分享给好友了。超多人的，vr场馆很不错，可以仔细地看。已经分享给好友了。"
+        },
+        {
+          "name": "李潇潇",
+          "avatar": "https://ss0.bdstatic.com/70cFuHSh_Q1YnxGkpoWK1HF6hhy/it/u=2641106727,69344425&fm=111&gp=0.jpg",
+          "time": "2017-1-12 15:20",
+          "message": "这个展览我有去现场，超多人的，vr场馆很不错，可以仔细地看。已经分享给好友了。超多人的，vr场馆很不错，可以仔细地看。已经分享给好友了。超多人的，vr场馆很不错，可以仔细地看。已经分享给好友了。"
+        },
+        {
+          "name": "李潇潇",
+          "avatar": "https://ss0.bdstatic.com/70cFuHSh_Q1YnxGkpoWK1HF6hhy/it/u=2641106727,69344425&fm=111&gp=0.jpg",
+          "time": "2017-1-12 15:20",
+          "message": "这个展览我有去现场，超多人的，vr场馆很不错，可以仔细地看。已经分享给好友了。超多人的，vr场馆很不错，可以仔细地看。已经分享给好友了。超多人的，vr场馆很不错，可以仔细地看。已经分享给好友了。"
+        }
+      ]
+  }
+
+}

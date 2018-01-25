@@ -1,0 +1,235 @@
+{
+  "advert": [
+    {
+      "url": "http://baidu.com",
+      "thumbnail": "../assets/images/temporary/advert1.jpg"
+    },
+    {
+      "url": "http://baidu.com",
+      "thumbnail": "../assets/images/temporary/advert2.jpg"
+    }
+  ],
+  "filter": [
+    {
+      "filterName": "地区",
+      "list": ["全部","佛山","珠海","深圳","广州","中山"],
+      "isActive": 0
+    },
+    {
+      "filterName": "时间",
+      "list": ["全部","2017-05","2017-06","2017-07","2017-08","2017-09"],
+      "isActive": 0
+    }
+  ],
+  "schoolList": [
+    {
+      "schoolId": "5",
+      "avatar": "http://91ant.china-360.cn/Public/common/works/0/0/728/1833.png",
+      "schoolName": "广州美术学院",
+      "titleTag": "new",
+      "address": "广东省广州市",
+      "thumbnail": "http://91ant.china-360.cn/Public/common/works/0/0/728/1833.png",
+      "count": {
+        "opusNum": 1000,
+        "vrNum": 5,
+        "studentNum": 200
+      }
+    },
+    {
+      "schoolId": "5",
+      "avatar": "http://91ant.china-360.cn/Public/common/works/0/0/728/1833.png",
+      "schoolName": "广州美术学院",
+      "titleTag": "hot",
+      "address": "广东省广州市",
+      "thumbnail": "http://91ant.china-360.cn/Public/common/works/0/0/728/1833.png",
+      "count": {
+        "opusNum": 1000,
+        "vrNum": 5,
+        "studentNum": 200
+      }
+    },
+    {
+      "schoolId": "5",
+      "avatar": "http://91ant.china-360.cn/Public/common/works/0/0/728/1833.png",
+      "schoolName": "广州美术学院",
+      "titleTag": "new",
+      "address": "广东省广州市",
+      "thumbnail": "http://91ant.china-360.cn/Public/common/works/0/0/728/1833.png",
+      "count": {
+        "opusNum": 1000,
+        "vrNum": 5,
+        "studentNum": 200
+      }
+    },
+    {
+      "schoolId": "5",
+      "avatar": "http://91ant.china-360.cn/Public/common/works/0/0/728/1833.png",
+      "schoolName": "广州美术学院",
+      "titleTag": "hot",
+      "address": "广东省广州市",
+      "thumbnail": "http://91ant.china-360.cn/Public/common/works/0/0/728/1833.png",
+      "count": {
+        "opusNum": 1000,
+        "vrNum": 5,
+        "studentNum": 200
+      }
+    },
+    {
+      "schoolId": "5",
+      "avatar": "http://91ant.china-360.cn/Public/common/works/0/0/728/1833.png",
+      "schoolName": "广州美术学院",
+      "titleTag": "new",
+      "address": "广东省广州市",
+      "thumbnail": "http://91ant.china-360.cn/Public/common/works/0/0/728/1833.png",
+      "count": {
+        "opusNum": 1000,
+        "vrNum": 5,
+        "studentNum": 200
+      }
+    },
+    {
+      "schoolId": "5",
+      "avatar": "http://91ant.china-360.cn/Public/common/works/0/0/728/1833.png",
+      "schoolName": "广州美术学院",
+      "titleTag": "hot",
+      "address": "广东省广州市",
+      "thumbnail": "http://91ant.china-360.cn/Public/common/works/0/0/728/1833.png",
+      "count": {
+        "opusNum": 1000,
+        "vrNum": 5,
+        "studentNum": 200
+      }
+    },
+    {
+      "schoolId": "5",
+      "avatar": "http://91ant.china-360.cn/Public/common/works/0/0/728/1833.png",
+      "schoolName": "广州美术学院",
+      "titleTag": "new",
+      "address": "广东省广州市",
+      "thumbnail": "http://91ant.china-360.cn/Public/common/works/0/0/728/1833.png",
+      "count": {
+        "opusNum": 1000,
+        "vrNum": 5,
+        "studentNum": 200
+      }
+    },
+    {
+      "schoolId": "5",
+      "avatar": "http://91ant.china-360.cn/Public/common/works/0/0/728/1833.png",
+      "schoolName": "广州美术学院",
+      "titleTag": "hot",
+      "address": "广东省广州市",
+      "thumbnail": "http://91ant.china-360.cn/Public/common/works/0/0/728/1833.png",
+      "count": {
+        "opusNum": 1000,
+        "vrNum": 5,
+        "studentNum": 200
+      }
+    },
+    {
+      "schoolId": "5",
+      "avatar": "http://91ant.china-360.cn/Public/common/works/0/0/728/1833.png",
+      "schoolName": "广州美术学院",
+      "titleTag": "hot",
+      "address": "广东省广州市",
+      "thumbnail": "http://91ant.china-360.cn/Public/common/works/0/0/728/1833.png",
+      "count": {
+        "opusNum": 1000,
+        "vrNum": 5,
+        "studentNum": 200
+      }
+    },
+    {
+      "schoolId": "5",
+      "avatar": "http://91ant.china-360.cn/Public/common/works/0/0/728/1833.png",
+      "schoolName": "广州美术学院",
+      "titleTag": "",
+      "address": "广东省广州市",
+      "thumbnail": "http://91ant.china-360.cn/Public/common/works/0/0/728/1833.png",
+      "count": {
+        "opusNum": 1000,
+        "vrNum": 5,
+        "studentNum": 200
+      }
+    },
+    {
+      "schoolId": "5",
+      "avatar": "http://91ant.china-360.cn/Public/common/works/0/0/728/1833.png",
+      "schoolName": "广州美术学院",
+      "titleTag": "",
+      "address": "广东省广州市",
+      "thumbnail": "http://91ant.china-360.cn/Public/common/works/0/0/728/1833.png",
+      "count": {
+        "opusNum": 1000,
+        "vrNum": 5,
+        "studentNum": 200
+      }
+    },
+    {
+      "schoolId": "5",
+      "avatar": "http://91ant.china-360.cn/Public/common/works/0/0/728/1833.png",
+      "schoolName": "广州美术学院",
+      "titleTag": "",
+      "address": "广东省广州市",
+      "thumbnail": "http://91ant.china-360.cn/Public/common/works/0/0/728/1833.png",
+      "count": {
+        "opusNum": 1000,
+        "vrNum": 5,
+        "studentNum": 200
+      }
+    },
+    {
+      "schoolId": "5",
+      "avatar": "http://91ant.china-360.cn/Public/common/works/0/0/728/1833.png",
+      "schoolName": "广州美术学院",
+      "titleTag": "hot",
+      "address": "广东省广州市",
+      "thumbnail": "http://91ant.china-360.cn/Public/common/works/0/0/728/1833.png",
+      "count": {
+        "opusNum": 1000,
+        "vrNum": 5,
+        "studentNum": 200
+      }
+    },
+    {
+      "schoolId": "5",
+      "avatar": "http://91ant.china-360.cn/Public/common/works/0/0/728/1833.png",
+      "schoolName": "广州美术学院",
+      "titleTag": "",
+      "address": "广东省广州市",
+      "thumbnail": "http://91ant.china-360.cn/Public/common/works/0/0/728/1833.png",
+      "count": {
+        "opusNum": 1000,
+        "vrNum": 5,
+        "studentNum": 200
+      }
+    },
+    {
+      "schoolId": "5",
+      "avatar": "http://91ant.china-360.cn/Public/common/works/0/0/728/1833.png",
+      "schoolName": "广州美术学院",
+      "titleTag": "",
+      "address": "广东省广州市",
+      "thumbnail": "http://91ant.china-360.cn/Public/common/works/0/0/728/1833.png",
+      "count": {
+        "opusNum": 1000,
+        "vrNum": 5,
+        "studentNum": 200
+      }
+    },
+    {
+      "schoolId": "5",
+      "avatar": "http://91ant.china-360.cn/Public/common/works/0/0/728/1833.png",
+      "schoolName": "广州美术学院",
+      "titleTag": "",
+      "address": "广东省广州市",
+      "thumbnail": "http://91ant.china-360.cn/Public/common/works/0/0/728/1833.png",
+      "count": {
+        "opusNum": 1000,
+        "vrNum": 5,
+        "studentNum": 200
+      }
+    }
+  ],
+  "pageSum":2
+}

@@ -1,0 +1,29 @@
+{
+  "name": "yoeach.com",
+  "version": "1.0.0",
+  "description": "",
+  "main": "gulpfile.js",
+  "scripts": {
+    "dev": "gulp"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://git.coding.net/lyms/yoeach.com.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "browser-sync": "^2.18.13",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^4.0.0",
+    "gulp-changed": "^3.1.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-file-include": "^1.2.0",
+    "gulp-html-beautify": "^1.0.1",
+    "gulp-html-import": "0.0.2",
+    "gulp-htmlmin": "^3.0.0",
+    "gulp-plumber": "^1.1.0",
+    "gulp-sass": "^3.1.0",
+    "gulp-uglify": "^3.0.0"
+  }
+}

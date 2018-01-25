@@ -1,0 +1,32 @@
+.ateIcon {
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  background: no-repeat center;
+  background-size: cover;
+}
+
+.aicon {
+  display: block;
+  background: no-repeat center;
+  background-size: cover;
+  &:before {
+    content: '';
+    display: block;
+    padding-top: 100%;
+  }
+}
+
+$icon: (i-close,11),(i-close__w,16);
+@each $class,$width,$height in $icon {
+  .#{$class} {
+    width: #{$width}px;
+    background-image: url("../images/icon/#{$class}.png");
+    @if $height {
+      &:before {
+        padding-top: ($height/$width)*100%;
+      }
+    }
+
+  }
+}

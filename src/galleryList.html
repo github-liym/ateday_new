@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>画廊列表</title>
+	@@include('components/linkCss.html')
+</head>
+<body>
+@@include('components/header.html')
+
+<div class="filter wrap1200 clearfix">
+	<div class="filter-scroll">
+		<div class="filter-list">
+			<div class="filter-item">
+				<label>地区：</label>
+				<ul class="clearfix">
+					<li class="active">
+						<a href="javascript:" >全部</a>
+					</li>
+					<li>
+						<a href="javascript:" >佛山</a>
+					</li>
+					<li>
+						<a href="javascript:" >深圳</a>
+					</li>
+					<li>
+						<a href="javascript:" >广州</a>
+					</li>
+					<li>
+						<a href="javascript:" >中山</a>
+					</li>
+				</ul>
+			</div>
+			<div class="filter-item">
+				<label>时间：</label>
+				<ul class="clearfix">
+					<li class="active">
+						<a href="javascript:" >全部</a>
+					</li>
+					<li>
+						<a href="javascript:" >2017-05</a>
+					</li>
+					<li>
+						<a href="javascript:" >2017-06</a>
+					</li>
+					<li>
+						<a href="javascript:" >2017-07</a>
+					</li>
+					<li>
+						<a href="javascript:" >2017-08</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<div class="filter-close" onclick="closeFilter(this);">完成</div>
+	</div>
+	<div class="backdrop" onclick="closeFilter(this);"></div>
+	<a class="btn-screen" href="javascript:void(0);" onclick="openFilter(this);">
+		筛选
+		<svg class="icon" aria-hidden="true">
+			<use xlink:href="#icon-shaixuan"></use>
+		</svg>
+	</a>
+</div>
+<div class="wrap1200">
+	<div class="list-wrap gallery-list">
+		<div class="item-wrap">
+			@@include('components/item/galleryItem.html')
+		</div>
+		<div class="item-wrap">
+			@@include('components/item/galleryItem.html')
+		</div>
+		<div class="item-wrap">
+			@@include('components/item/galleryItem.html')
+		</div>
+		<div class="item-wrap">
+			@@include('components/item/galleryItem.html')
+		</div>
+		<div class="item-wrap">
+			@@include('components/item/galleryItem.html')
+		</div>
+		<div class="item-wrap">
+			@@include('components/item/galleryItem.html')
+		</div>
+		<div class="item-wrap">
+			@@include('components/item/galleryItem.html')
+		</div>
+		<div class="item-wrap">
+			@@include('components/item/galleryItem.html')
+		</div>
+		<div class="item-wrap">
+			@@include('components/item/galleryItem.html')
+		</div>
+		<div class="item-wrap">
+			@@include('components/item/galleryItem.html')
+		</div>
+		<div class="item-wrap">
+			@@include('components/item/galleryItem.html')
+		</div>
+		<div class="item-wrap">
+			@@include('components/item/galleryItem.html')
+		</div>
+	</div>
+
+	@@include('components/pagination.html')
+
+</div>
+
+
+@@include('components/footer.html')
+@@include('components/linkJs.html')
+</body>
+</html>

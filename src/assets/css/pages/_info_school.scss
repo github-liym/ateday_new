@@ -1,0 +1,79 @@
+#info-school {
+  //padding-bottom: 16px;
+  //学校简介
+  .school-info {
+    padding: 40px 60px 40px 60px;
+    margin-top: 30px;
+
+    h3 {
+      margin-top: 0;
+      margin-bottom: 15px;
+      //font-size: size(24);
+      font-weight: bold;
+    }
+    article {
+      line-height: 1.6;
+      span {
+        display: inline;
+      }
+    }
+    img {
+      max-width: 100%;
+    }
+    @media (max-width: 768px) {
+      padding: 20px 30px 40px 30px;
+    }
+  }
+
+  //设计展
+  .exhibitionwrap {
+    .exhibition-item-wrap {
+      padding: 0 15px;
+    }
+  }
+  .opuswrap {
+    .cont {
+      padding: 0 10px;
+      .opus-item-wrap {
+        padding: 0 30px;
+      }
+    }
+    .member-item-wrap {
+      padding: 0 15px;
+    }
+    .btn-more {
+      margin-top: 30px;
+    }
+    @media (max-width: 768px) {
+      .cont {
+        .opus-item-wrap {
+          padding: 0 10px;
+        }
+      }
+    }
+  }
+  .opus-item-wrap {
+    width: 33.333%;
+  }
+  @media (max-width: 1200px) {
+    .opuswrap {
+      .cont {
+        .opus-item-wrap {
+          padding: 0 10px;
+        }
+      }
+    }
+
+  }
+  @media (max-width: 992px) {
+    .opus-item-wrap {
+      width: 50%;
+    }
+  }
+  @media (max-width: 768px) {
+    .opus-item-wrap {
+      width: 100%;
+    }
+  }
+
+}

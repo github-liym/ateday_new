@@ -1,0 +1,499 @@
+//===============整理前===============
+
+
+//背景白
+.bgW {
+  background: #fff;
+}
+//颜色标签
+.text-595853 { color: #595853; }
+.text-f52e3c { color: #f52e3c; }
+.text-ee6b75 { color: #ee6b75; }
+.text-8b8b8b { color: #8b8b8b; }
+.text-00a0e8 { color: #00a0e8; }
+.text-d13d3d { color: #d13d3d; }
+.text-62bf49 { color: #62bf49; }
+.text-535353 { color: #535353; }
+.text-828282 {
+  color: #828282;
+}
+
+//按钮
+//灰色按钮
+.btn-gray {
+  background: #f4f4f4;
+  border: 1px solid #e5e5e5;
+}
+.btn-62bf49 {
+  padding:  3px 10px;
+  color: #fff;
+  background: #62bf49;
+  border-radius: 5px;
+  &:hover,&:focus {
+    color: #fff;
+  }
+}
+.btn-d13d3d {
+  padding: 3px 10px;
+  color: #fff;
+  background: #d13d3d;
+  border-radius: 5px;
+  &:hover,&:focus {
+    color: #fff;
+  }
+}
+//蓝色按钮
+.btn-00a0e8 {
+  display: inline-block;
+  background: #00a0e8;
+  padding: 6px 12px;
+  border: 0;
+  border-radius: 5px;
+}
+
+//最大百分百
+.imgMax {
+  width: 100%;
+}
+//透明浮底
+.shadeBg {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  padding: 10px 5px;
+  background: rgba(#000,.7);
+}
+
+//布局
+.relative {
+  position: relative;
+}
+//table布局
+.table {
+  display: table;
+  width: 100%;
+  .tr {
+    display: table-row;
+  }
+  .th,.td {
+    display: table-cell;
+  }
+}
+//浮动布局
+.fl {
+  float: left !important;
+}
+.fr {
+  float: right !important;
+}
+//display隐藏
+.none {
+  display: none !important;
+}
+//垂直居中
+.middle {
+  display: table-cell;
+  vertical-align: middle;
+}
+//绝对定位居中
+.vertical {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+//单行省略
+.omit {
+  max-width: 100%;
+  white-space:nowrap; overflow:hidden; text-overflow:ellipsis;
+}
+
+//标签tag
+//蓝色标签
+.tagBlue {
+  display: inline-block;
+  line-height: 1;
+  color: #fff;
+  font-size: 10px;
+  padding: 5px 12px ;
+  border-radius: 11px;
+  background: $blue;
+}
+//红色标签
+.tagRed {
+  display: inline-block;
+  line-height: 1;
+  color: #fff;
+  font-size: 10px;
+  padding: 3px 8px;
+  border-radius: 11px;
+  background: #cd3e3e;
+}
+//灰色提示
+.tipGray {
+  padding: 5px;
+  background: rgba(#959595,.9);
+  font-size: 14px;
+  color: #fff;
+}
+//红色提示
+.red-tip {
+  display: inline-block;
+  //width: 36px;
+  padding: 0px 5px 1px;
+  margin-left: 8px;
+  font-size: 10px;
+  background: #cd3e3e;
+  color: #fff;
+  border-radius: 8px;
+  vertical-align: middle;
+  text-align: center;
+}
+//图片标签
+.tagicon {
+  display: inline-block;
+  vertical-align: sub;
+  width: 36px;
+  height: 15px;
+
+  &.new {
+    background: url("../images/icon/new.png") no-repeat center;
+    background-size: cover;
+  }
+  &.hot {
+    background: url("../images/icon/hot.png") no-repeat center;
+    background-size: cover;
+  }
+}
+
+
+//模态框切换兼容
+/*body {
+  padding-right: 0px !important;
+  &.modal-open {
+    padding-right: 17px !important;
+  }
+}*/
+.loginsuccess ,.signsuccess{
+  .modal-header {
+    position: relative;
+  }
+  .modal-header .close {
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 35px;
+  }
+}
+//===============整理前 end===============
+
+//===============整理后===============
+
+
+
+/*
+html {
+  font-size: 100px;
+}*/
+
+
+//白色背景
+.bg-white {
+  width: 1200px;
+  max-width: 100%;
+  padding-bottom: 30px;
+  background: #fff;
+  margin: 20px auto 0;
+  &:first-child {
+    margin-top: 35px;
+  }
+  @media (max-width: 1200px) {
+    width: 970px;
+  }
+  @media (max-width: 992px) {
+    width: 750px;
+  }
+  @media (max-width: 768px) {
+    width: 90%;
+  }
+}
+
+//icon 通用样式
+.icon {
+  width: 1em; height: 1em;
+  //vertical-align: -0.15em;
+  vertical-align: middle;
+  fill: currentColor;
+  overflow: hidden;
+}
+
+
+
+//缩略图通用样式
+.thumbnail {
+  display: block;
+  overflow: hidden;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  border-radius: 0;
+
+  .cover {
+    transition: all .2s linear;
+    max-width: none;
+  }
+}
+.thumbnailbg {
+  width: 100%;
+  height: 100%;
+  transition: all .2s linear;
+  background: #fff no-repeat center;
+  background-size: cover;
+}
+
+
+
+
+
+
+
+
+//弹窗
+.layersc {
+  overflow: hidden !important;
+}
+
+
+@keyframes layerbg {
+  0% {
+    background: rgba(#000,0);
+  }
+  100% {
+    background: rgba(#000,.4);
+  }
+}
+.fancybox {
+  //backface-visibility: hidden;
+  transform: translate(-50%,-50%);
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  z-index: 900;
+  width: 560px;
+  height: 250px;
+  max-width: 98%;
+  max-height: 98%;
+  &.cur {
+    z-index: 999;
+  }
+  .layerbox {
+    backface-visibility: hidden;
+    position: relative;
+    height: 100%;
+    //padding: 30px 0 0;
+    //background: #fff;
+  }
+  .layer-header {
+    position: absolute;
+    top: 0;
+    width: 100%;
+  }
+  .layer-body {
+    overflow: auto;
+    height: 100%;
+    //margin: 30px 0;
+  }
+  &.rotateY-360 {
+    .layerbox {
+      transform: rotateY(0deg);
+      animation: layerbox 1.5s;
+    }
+    .fancyboxbg {
+    backface-visibility: hidden;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #fff url("../images/common/logo.jpg") no-repeat center;
+    transform: rotateY(-180deg);
+    animation: layerboxbg 1.5s;
+  }
+  }
+}
+
+@keyframes layerbox {
+  0% {
+    transform:perspective(1800px) rotateY(180deg);
+  }
+  100% {
+    transform:perspective(1800px) rotateY(0deg);
+  }
+}
+@keyframes layerboxbg {
+  0% {
+    transform:perspective(1800px) rotateY(0deg);
+  }
+  100% {
+    transform:perspective(1800px) rotateY(-180deg);
+  }
+}
+.fancybox-lock-test {
+  overflow-y: hidden !important;
+}
+
+
+.login-tip {
+  width: 100%;
+  padding: 23px 15px 23px 20px;
+  line-height: 28px;
+  background: #f8f8e4;
+  color: #f39700;
+  font-size: 12px;
+  border: 1px solid #e7e7e7;
+}
+
+@import "btn";
+
+@import "module";
+@import "tag";
+
+
+//列表页公用
+.listMember,.listOpus {
+  .filter {
+    //margin-bottom: 20px;
+  }
+
+  .btn-screen {
+    width: 100%;
+  }
+}
+//用户列表页
+.listMember {
+  padding-top: 10px;
+  .member-list {
+    padding-top: 15px;
+    margin: 0px 0px 0;
+    background: #fff;
+  }
+  >.wrap1200 {
+    overflow: hidden;
+  }
+}
+
+//作品列表页
+.listOpus {
+  min-height: 720px;
+  padding-top: 10px;
+  .opus-list {
+    margin: 0 -10px;
+  }
+  /*.opus-list {
+    padding-top: 15px;
+    margin: 0px 0px 0;
+    background: #fff;
+  }*/
+}
+
+.dataNone {
+  text-align: center;
+  padding: 20px 0;
+}
+
+
+#header.headMain {
+  .nav {
+    li {
+      a {
+        position: relative;
+        border-bottom: 0px solid transparent;
+        padding: 35px 25px 27px;
+        overflow: hidden;
+        &:after {
+          content: '';
+          position: absolute;
+          right: 0;
+          bottom: 0;
+          width: 0%;
+          height: 2px;
+          background: $blue;
+          transition: width .8s ease;
+        }
+        &:hover {
+          &:after {
+            width: 100%;
+          }
+          .ant {
+            right: 50%;
+            opacity: 1;
+          }
+        }
+        .ant {
+          position: absolute;
+          right: -12px;
+          bottom: 1px;
+          width: 24px;
+          height: 24px;
+          background: no-repeat center;
+          background-image: url("../images/temporary/7c25625c0a3b0e83a04f5832102d03d8.gif");
+          background-size: 100% auto;
+          transform: translateX(50%);
+          transition: right 1.8s linear .5s;
+          opacity: 0;
+        }
+      }
+    }
+    .active {
+      a {
+        border-bottom: 0px solid $blue;
+        overflow: hidden;
+        //&:before {
+        //  content: '';
+        //  position: absolute;
+        //  right: 10px;
+        //  bottom: 0;
+        //  display: block;
+        //  width: 20px;
+        //  height: 20px;
+        //  background: $blue;
+        //  border-radius: 50%;
+		//
+        //}
+        &:after {
+          width: 100%;
+        }
+        .ant {
+          right: 50%;
+          opacity: 1;
+          background-image: url("../images/temporary/215d038c918c6e40c63a88b83a624532.gif");
+        }
+
+      }
+    }
+    @keyframes ant {
+      0% {
+
+      }
+      100% {
+
+      }
+    }
+  }
+  &.fixedH {
+    .nav {
+      li {
+        &.active {
+          a {
+            border-bottom: 0px;
+          }
+        }
+        a {
+          padding: 13px 25px;
+          .ant {
+            opacity: 0;
+          }
+        }
+      }
+    }
+  }
+}

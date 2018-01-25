@@ -1,0 +1,115 @@
+//标签
+.icon-tag {
+  display: inline-block;
+  vertical-align: middle;
+  width: 44px;
+  height: 22px;
+  background: center no-repeat;
+  background-size: 100% 100%;
+  // 蓝色认证
+  &.tag1-b {
+    margin-left: 5px;
+    background-image: url("../images/tag/tag1_b.png");
+  }
+  // new 标签
+  &.new {
+    width: 36px;
+    height: 15px;
+    background-image: url("../images/tag/new.png");
+  }
+  // hot 标签
+  &.hot {
+    width: 26px;
+    height: 29px;
+    background-image: url("../images/tag/hot-2.png");
+  }
+  // 灰色vr 标签
+  &.vr {
+    width: 54px;
+    height: 54px;
+    background-image: url("../images/tag/vr.png");
+  }
+  // 灰色播放 标签
+  &.play {
+    width: 54px;
+    height: 54px;
+    background-image: url("../images/tag/play.png");
+  }
+  // 右上角vr 标签
+  &.tagvr {
+    width: 55px;
+    height: 55px;
+    background-image: url("../images/tag/tagvr.png");
+  }
+  // 右上角2d 标签
+  &.tag2d {
+    width: 55px;
+    height: 55px;
+    background-image: url("../images/tag/tag2d.png");
+  }
+  // 版权
+  &.tag-copyright {
+    width: 33px;
+    height: 18px;
+    background-image: url("../images/tag/tag2-1.png");
+  }
+  //原创
+  &.tag-original {
+    width: 33px;
+    height: 18px;
+    background-image: url("../images/tag/tag2-2.png");
+  }
+  //咸鱼认证1
+  &.fish1 {
+    width: 15px;
+    height: 19px;
+    background-image: url("../images/tag/fish.png");
+  }
+  //咸鱼认证
+  &.fish {
+    width: 1em;
+    height: 1em;
+    background-image: url("../images/tag/fish.png");
+    vertical-align: middle;
+  }
+}
+.tag-type {
+  display: inline-block;
+  padding: 0 10px;
+  margin: 0 2.5px;
+  line-height: 18px;
+  border: 1px solid #c9c9c9;
+  border-radius: 10px;
+  color: #5b5b5b;
+  font-size: 12px;
+}
+
+
+.tag-wrap {
+  .tag-item {
+    display: inline-block;
+    padding: 0 5px;
+    line-height: 18px;
+    font-size: 11px;
+    color: #889da7;
+    background: #e2eef3;
+    border-radius: 2px;
+    vertical-align: middle;
+  }
+}
+
+.ate-icon1 {
+  position: absolute;
+  top: -11px;
+  right: -13px;
+  width: 106px;
+  height: 106px;
+  background: url("../images/tag/ate-icon1.png") no-repeat center;
+  background-size: cover;
+  @media (max-width: 768px) {
+    top: -8px;
+    right: -10px;
+    width: 75px;
+    height: 75px;
+  }
+}
